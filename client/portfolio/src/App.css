@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+*{margin: 0px; padding: 0px;
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  /* word-spacing: 1px; */
+  letter-spacing: 1.4px;
+}
+.App {
+  /* width: fit-content; */
+  /* display: flex; */
+  /* height: 2000vh; */
+  text-align: center;
+}
+.nav{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.3s ease;
+  animation: slideDown 0.5s forwards;
+  z-index: 5;
+}
+@keyframes slideDown {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 0;
+  }
+}
+.third{
+
+  background-color:#fafbfc;
+}
+
+@media ( min-width : 600px) and ( max-width :1024px) {
+  .App{
+    /* width: 100%; */
+    margin: 0;
+    padding: 0;
+    /* justify-content: flex-start; */
+    /* width: 74%; */
+  }
+
+  .second{
+    display: flex;
+    margin-bottom: 25%;
+    width: 100%;
+  }
+  
+
+  .fifth{
+    width: 100%;
+  }
+}
+
+
+/* navbar css */
+.nav-background-color{
+  background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(206,211,213,1) 0%, rgba(228,228,228,1) 88%);
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  /* color: black; */
+  /* padding: 14px 16px; */
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdowncontent {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdowncontent a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdowncontent a:hover {
+  background-color: #7142CC;
+  color: white;
+
+}
+
+.dropdown:hover .dropdowncontent {
+  display: block;
+}
+
+
+/* responsive navbar  */
+
+
+.dropdowncontent1 {
+  display: none;
+
+
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdowncontent1 a {
+  float: none;
+  color: black;
+  padding: 18px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdowncontent1 a:hover {
+  background-color: #7142CC;
+  color: white;
+
+}
+
+.dropdown:hover .dropdowncontent1 {
+  display: flex;
+  flex-direction: column;
+  top: 80px;
+  right: 100%;
+}
+

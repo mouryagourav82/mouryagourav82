@@ -1,0 +1,57 @@
+.main{
+    display: flex;
+    width: fit-content;
+    
+}
+.main2{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    
+   
+}
+.first{
+    scale: 1.2;
+    z-index: -2;
+    object-fit: cover;
+}
+.second{
+    position: absolute;
+    top: 5%;
+    left: 77%;
+    overflow: hidden;
+    transform: translate3d(0,-1.2rem,0);
+    transition: ease-in-out .3s;
+    visibility: hidden;
+    cursor: pointer;
+}
+.third{
+    visibility: hidden;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+    transform: translate3d(0,1.2rem,0);
+    position: absolute;
+    top: 70%;
+    left: 10%;
+}
+.main2:hover .third{
+    transition-property: visibility transform transition;
+    visibility: visible;
+    transform:inherit;
+}
+.main2:hover .second{
+    transition-property: visibility transform transition;
+    visibility: visible;
+    transform:inherit;
+}
+.main2:hover .first{
+    /* background-color: aqua; */
+    z-index: -2;
+    transition:ease-in-out 1s;
+    opacity: 0.3;
+    scale: 1;
+}
+.main2:hover{
+    top: 0;
+}
+

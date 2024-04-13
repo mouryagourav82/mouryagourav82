@@ -1,0 +1,139 @@
+.main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 7vw;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.main1{
+    width: 60%;
+}
+.main2{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+.first{
+    color: #7142CC;
+    text-align: left;
+    padding-left: 9%;
+}
+.second{
+    display: flex;
+    padding-left: 9%;
+    margin-top: 1.5%;
+}
+.third{
+    /* display: flex; */
+    padding-left: 9%;
+    margin-top: 1.5%;
+    /* width: fit-content; */
+    text-align: left;
+    line-height: 1.6;
+}
+.container{
+    width:85%;
+    /* display: flex; */
+    /* margin-top: 5px; */
+    margin-top: 1.5%;
+    padding-left: 9%;
+
+}
+.progress{
+    padding: 2px;
+  background: transparent;
+  border-radius: 6px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.bar1{
+    width: 90%;
+    height: 7px;
+	background-color: #7142CC;  
+  border-radius: 4px; 
+  transition: 0.4s linear;  
+  /* transition-property: width, background-color;  */
+  animation: progressAnimationStrike1 5s;
+}
+@keyframes progressAnimationStrike1 {
+    from { width: 0 }
+    to   { width: 90% }
+}
+.bar2{
+    width: 100%;
+    height: 7px;
+	background-color: #7142CC;  
+  border-radius: 4px; 
+  transition: 0.4s linear;  
+  /* transition-property: width, background-color;  */
+  animation: progressAnimationStrike2 5s;
+}
+@keyframes progressAnimationStrike2 {
+    from { width: 0 }
+    to   { width: 100% }
+}
+.bar3{
+    width: 75%;
+    height: 7px;
+	background-color: #7142CC;  
+  border-radius: 4px; 
+  transition: 0.4s linear;  
+  /* transition-property: width, background-color;  */
+  animation: progressAnimationStrike3 5s;
+}
+@keyframes progressAnimationStrike3 {
+    from { width: 0 }
+    to   { width: 75% }
+}
+
+.button{
+    color:white;
+    background-color: #7142CC;
+    border: none;
+    font-size: 17px;
+    display: flex;
+    margin-top: 4.5%;
+    margin-left: 9%;
+    padding: 12px 25px;
+    border-radius: 25px;
+    
+}
+.button:hover{
+        background-color: rgba(76, 0, 255);
+        transition: 1s;
+}
+.ins{
+    display: none;
+}
+@media (max-width:600px) {
+    .button{
+        margin-top: 10vw;
+    }
+   
+    .main1{
+        width: 100%;
+    }
+    .main2{
+        display: none;
+    }
+    .first{
+        margin-bottom: 15%;
+    }
+    .ins{
+        display: block;
+        background-image: "pic1.jpg";
+    }
+}
+@media ( min-width : 600px) and ( max-width :1024px) {
+    
+    .main1{
+        width: 100%;
+    }
+    .main2{
+        display: none;
+    }
+    
+    .ins{
+        display: block;
+        background-image: "pic1.jpg";
+    }
+}

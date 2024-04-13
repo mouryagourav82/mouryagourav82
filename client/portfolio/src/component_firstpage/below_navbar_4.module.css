@@ -1,0 +1,68 @@
+.main{
+    overflow: hidden;
+    width: 100%;
+    margin-top: 4%;
+        margin-bottom: 4%;
+}
+.first{
+    /* display: flex; */
+    width: 100%;
+    /* align-items: center; */
+    color: orangered;
+}
+.second{
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 1.5%;
+}
+.third{
+    width: 100%;
+    margin-top: 5%;
+    display: grid;
+    grid: 60% / auto auto auto;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    margin-bottom: 10%;
+}
+.forth{
+     border: none;
+     /* color: white; */
+     margin: 0;
+     /* margin-bottom: 10%; */
+     
+}
+.forth button{
+    background-color: #7142CC;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 50px;
+    transition: ease-in-out .5s ;
+}
+.forth button:hover{
+    background-color: rgba(110, 64, 153, 0.849);
+    transition-property: background-color;
+}
+@media (max-width:600px){
+    .third{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        /* width: ; */
+    }
+    
+}
+@media (min-width:600px) and (max-width: 1024px){
+   
+    .third{
+        display: grid;
+
+        grid: 'card card' 
+              'card card' 
+              'card card' ;
+        
+        justify-content: space-evenly;
+    }
+    
+}
